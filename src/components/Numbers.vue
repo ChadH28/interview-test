@@ -24,10 +24,9 @@ export default {
   methods: {
     n()
     {
-      let numbers = [];
       for(var i = 0; i < this.limit; i++)
       {
-        numbers = [...numbers, i];
+        numbers = [...this.numbers, i];
       }
       return numbers.sort(() => Math.random() - 0.5);
     },
